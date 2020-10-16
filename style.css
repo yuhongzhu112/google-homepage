@@ -1,0 +1,99 @@
+html {
+	color: rgb(100,100,100);
+}
+
+body {
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	height: 50px;
+	flex-direction: row;
+	align-items: center;
+	margin: 5px 25px;
+}
+
+nav img {
+	border-radius: 50%;
+	
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#nav1 a {
+	margin-right: 15px;
+}
+
+#nav2 a {
+	margin-left: 15px;
+}
+
+#nav1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#nav2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: auto;
+}
+
+
+#mag {
+	height: 20px;
+	width: 20px;
+	color: rgba(0,0,0,.87);
+}
+
+#voice {
+	width: 25px;
+}
+
+#hplogo {
+	padding-top: 95px;
+}
+
+#search-bar input {
+	display: block;
+	width: 387px;
+	height: 34px;
+	margin: 5px 0 5px 0;
+	border: none;
+	font-size: 16px;
+}
+
+#search-bar input:focus {
+	outline: none;
+}
+
+#search-bar {
+	border: 1px solid rgb(220, 220, 220);
+	border-radius: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 484px;
+	margin: 25px 0;
+}
