@@ -1,12 +1,20 @@
 html {
-	color: rgb(100,100,100);
+	color: rgb(80,80,80);
 }
 
 body {
 	font-family: arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 nav {
@@ -14,12 +22,11 @@ nav {
 	height: 50px;
 	flex-direction: row;
 	align-items: center;
-	margin: 5px 25px;
+	margin: 5px 20px 5px 26px;
 }
 
 nav img {
 	border-radius: 50%;
-	
 }
 
 form {
@@ -27,6 +34,10 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#account:hover {
+	box-shadow: 0 0 0 4px rgba(200, 200, 200, 0.3);
 }
 
 a {
@@ -39,11 +50,11 @@ a:hover {
 }
 
 #nav1 a {
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 #nav2 a {
-	margin-left: 15px;
+	margin-left: 20px;
 }
 
 #nav1 {
@@ -64,19 +75,21 @@ a:hover {
 	height: 20px;
 	width: 20px;
 	color: rgba(0,0,0,.87);
+	margin-left: 15px;
 }
 
 #voice {
 	width: 25px;
+	margin-right: 15px;
 }
 
 #hplogo {
-	padding-top: 95px;
+	padding-top: 198px;
 }
 
 #search-bar input {
 	display: block;
-	width: 387px;
+	width: 470px;
 	height: 34px;
 	margin: 5px 0 5px 0;
 	border: none;
@@ -93,7 +106,90 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
-	width: 484px;
+	justify-content: space-between;
+	width: 567px;
 	margin: 25px 0;
 }
+
+#search-bar:hover {
+	box-shadow: 0 1px 5px 1px rgb(230,230,230);
+}
+
+#buttons {
+	margin: 5px 0 15px 0;
+}
+
+#buttons button {
+	background-color: rgb(248,249,250);
+	padding: 10px 16px;
+	margin: 0 4px;
+	border: 0;
+	border-radius: 3px;
+}
+
+#buttons button:hover {
+	box-shadow: 0 0 0 1px rgb(220, 220, 220);
+}
+
+#buttons button:focus {
+	outline: none;
+	box-shadow:0 0 0 1px rgb(77,144,254);
+}
+
+form p {
+	font-size: 13px;
+}
+
+footer {
+	background-color: rgb(242,242,242);
+	flex-shrink: 0;
+	font-size: 15px;
+	color: rgb(120,120,120)
+}
+
+footer p {
+	margin:0;
+}
+
+#f1 {
+	padding: 15px 30px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+#f2 a{
+	padding: 15px 15px;
+}
+
+#f2 {
+	display: flex;
+	flex-direction: row;
+}
+
+#f21 {
+	display: flex;
+	flex-direction: row;
+}
+
+#f22 {
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+}
+
+@media (max-width: 600px) {
+	#f2 {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1200px) {
+	#f22 {
+		margin-left:0;
+	}
+	
+	#f2 {
+		justify-content: space-around;
+	}
+}
+
