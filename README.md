@@ -1,3 +1,3 @@
 #google-homepage
 
-Using HTML and CSS to create a webpage that resembles Google's homepage with a single search bar.
+A webpage that resembles Google's homepage with a single search bar, in HTML and CSS.
